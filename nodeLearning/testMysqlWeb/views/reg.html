@@ -89,13 +89,13 @@
 					return false;
 				}
 
-				if (txtUserRePwdval !== txtUserPwdVal) {
+				if (txtUserRePwdVal !== txtUserPwdVal) {
 					$('#container').prepend(errorTip.format('两次密码不一致'));
 					$txtUserPwd.focus();
 					return false;
 				}
 
-				return false;
+				return true;
 			});
 		});
 	</script>

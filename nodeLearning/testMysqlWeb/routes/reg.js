@@ -42,7 +42,7 @@ router.post('/', function(req, res) {
 			if (result.insertId > 0) {
 				res.locals.success = '注册成功，请点击 <a class="btn btn-link" href="/login" type="button">登录</a>';
 			} else {
-				res.locals.error = err;
+				res.locals.error = 'err';
 			}
 
 			res.render('reg', {title: TITLE_REG});

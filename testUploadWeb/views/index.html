@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+	<link rel='stylesheet' href='/stylesheets/signin.css' />
+	<script src="/javascripts/jquery-1.10.2.min.js"></script>
+</head>
+	<body>
+		<div class="container" id="container">
+			
+			<% if (locals.success) {%>
+				<div id="alt_success" class="alert alert-success">
+					<%- success %>
+				</div>
+			<% } %>
+			<% if (locals.error) {%>
+				<div id="alt_warning" class="alert alert-warning">
+					<%= error %>
+				</div>
+			<% } %>
+
+
+			<form class="form-signin" method="post" role="form" enctype="multipart/form-data">
+				<h2 class="form-signin-heading">上传文件</h2>
+				<input type="file" id="fulAvatar" name="fulAvatar" class="form-control" />
+				<br>
+				<button id="btnSub" class="btn btn-primary btn-lg" type="submit">上 传</button>
+			</form>
+		</div>
+	</body>
+	<script>
+     String.prototype.format = function (args) {
+            var result = this;
+            if (arguments.length > 0) {
+                if (arguments.length == 1 && typeof (args) == "object") {
+                    for (var key in args) {
+                        if (args[key] !== undefined) {
+                            var reg = new RegExp("({" + key + "})", "g");
+                            result = result.replace(reg, args[key]);
+                        }
+                    }
+                }
+                else {
+                    for (var i = 0; i < arguments.length; i++) {
+                        if (arguments[i] !== undefined) {
+                            var reg = new RegExp("({)" + i + "(})", "g");
+                            result = result.replace(reg, arguments[i]);
+                        }
+                    }
+                }
+            }
+            return result;
+    };
+
+    $(function(){
+        $('#btnSub').on('click',function(){
+            var fulAvatarVal = $('#fulAvatar').val(),
+                errorTip = '<div id="errorTip" class="alert alert-warning">{0}</div> ';
+
+            $("#errorTip, #alt_warning, #alt_success").remove();
+            
+            if(fulAvatarVal.length === 0)
+            {
+                $("#container").prepend(errorTip.format('请选择要上传的文件'));
+            }
+
+           var extName = fulAvatarVal.substring(fulAvatarVal.lastIndexOf('.'),fulAvatarVal.length).toLowerCase();
+
+            if (extName != '.png' && extName != '.jpg') {
+               $("#container").prepend(errorTip.format('只支持png和jpg格式图片'));
+               return false;
+            }
+            
+            return true;                
+        });
+    });
+	</script>
+</html>
