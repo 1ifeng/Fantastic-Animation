@@ -1,0 +1,1257 @@
+{
+    "result": [
+        {
+            "localAndPriceDto": {
+                "city": "山东",
+                "cityCode": 22,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "东营",
+                    "cityCode": 287,
+                    "totalPrices": null
+                },
+                {
+                    "city": "济南",
+                    "cityCode": 283,
+                    "totalPrices": null
+                },
+                {
+                    "city": "临沂",
+                    "cityCode": 292,
+                    "totalPrices": null
+                },
+                {
+                    "city": "聊城",
+                    "cityCode": 291,
+                    "totalPrices": null
+                },
+                {
+                    "city": "德州",
+                    "cityCode": 286,
+                    "totalPrices": null
+                },
+                {
+                    "city": "枣庄",
+                    "cityCode": 298,
+                    "totalPrices": null
+                },
+                {
+                    "city": "日照",
+                    "cityCode": 293,
+                    "totalPrices": null
+                },
+                {
+                    "city": "潍坊",
+                    "cityCode": 296,
+                    "totalPrices": null
+                },
+                {
+                    "city": "泰安",
+                    "cityCode": 294,
+                    "totalPrices": null
+                },
+                {
+                    "city": "青岛",
+                    "cityCode": 284,
+                    "totalPrices": null
+                },
+                {
+                    "city": "滨州",
+                    "cityCode": 285,
+                    "totalPrices": null
+                },
+                {
+                    "city": "莱芜",
+                    "cityCode": 290,
+                    "totalPrices": null
+                },
+                {
+                    "city": "淄博",
+                    "cityCode": 299,
+                    "totalPrices": null
+                },
+                {
+                    "city": "烟台",
+                    "cityCode": 297,
+                    "totalPrices": null
+                },
+                {
+                    "city": "威海",
+                    "cityCode": 295,
+                    "totalPrices": null
+                },
+                {
+                    "city": "菏泽",
+                    "cityCode": 288,
+                    "totalPrices": null
+                },
+                {
+                    "city": "济宁",
+                    "cityCode": 289,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "吉林",
+                "cityCode": 15,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "辽源",
+                    "cityCode": 215,
+                    "totalPrices": null
+                },
+                {
+                    "city": "四平",
+                    "cityCode": 216,
+                    "totalPrices": null
+                },
+                {
+                    "city": "长春",
+                    "cityCode": 211,
+                    "totalPrices": null
+                },
+                {
+                    "city": "吉林",
+                    "cityCode": 212,
+                    "totalPrices": null
+                },
+                {
+                    "city": "白山",
+                    "cityCode": 214,
+                    "totalPrices": null
+                },
+                {
+                    "city": "松原",
+                    "cityCode": 217,
+                    "totalPrices": null
+                },
+                {
+                    "city": "通化",
+                    "cityCode": 218,
+                    "totalPrices": null
+                },
+                {
+                    "city": "白城",
+                    "cityCode": 213,
+                    "totalPrices": null
+                },
+                {
+                    "city": "延边",
+                    "cityCode": 219,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "上海",
+                "cityCode": 25,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "上海",
+                    "cityCode": 321,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "甘肃",
+                "cityCode": 5,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "张掖",
+                    "cityCode": 75,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "宁夏",
+                "cityCode": 20,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "银川",
+                    "cityCode": 270,
+                    "totalPrices": null
+                },
+                {
+                    "city": "吴忠",
+                    "cityCode": 273,
+                    "totalPrices": null
+                },
+                {
+                    "city": "中卫",
+                    "cityCode": 274,
+                    "totalPrices": null
+                },
+                {
+                    "city": "石嘴山",
+                    "cityCode": 272,
+                    "totalPrices": null
+                },
+                {
+                    "city": "固原",
+                    "cityCode": 271,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "山西",
+                "cityCode": 23,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "临汾",
+                    "cityCode": 305,
+                    "totalPrices": null
+                },
+                {
+                    "city": "阳泉",
+                    "cityCode": 309,
+                    "totalPrices": null
+                },
+                {
+                    "city": "吕梁",
+                    "cityCode": 306,
+                    "totalPrices": null
+                },
+                {
+                    "city": "朔州",
+                    "cityCode": 307,
+                    "totalPrices": null
+                },
+                {
+                    "city": "忻州",
+                    "cityCode": 308,
+                    "totalPrices": null
+                },
+                {
+                    "city": "太原",
+                    "cityCode": 300,
+                    "totalPrices": null
+                },
+                {
+                    "city": "长治",
+                    "cityCode": 301,
+                    "totalPrices": null
+                },
+                {
+                    "city": "大同",
+                    "cityCode": 302,
+                    "totalPrices": null
+                },
+                {
+                    "city": "晋中",
+                    "cityCode": 304,
+                    "totalPrices": null
+                },
+                {
+                    "city": "晋城",
+                    "cityCode": 303,
+                    "totalPrices": null
+                },
+                {
+                    "city": "运城",
+                    "cityCode": 310,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "香港",
+                "cityCode": 33,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "香港",
+                    "cityCode": 395,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "四川",
+                "cityCode": 26,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "成都",
+                    "cityCode": 322,
+                    "totalPrices": null
+                },
+                {
+                    "city": "广安",
+                    "cityCode": 329,
+                    "totalPrices": null
+                },
+                {
+                    "city": "凉山",
+                    "cityCode": 332,
+                    "totalPrices": null
+                },
+                {
+                    "city": "南充",
+                    "cityCode": 334,
+                    "totalPrices": null
+                },
+                {
+                    "city": "眉山",
+                    "cityCode": 333,
+                    "totalPrices": null
+                },
+                {
+                    "city": "自贡",
+                    "cityCode": 341,
+                    "totalPrices": null
+                },
+                {
+                    "city": "乐山",
+                    "cityCode": 331,
+                    "totalPrices": null
+                },
+                {
+                    "city": "宜宾",
+                    "cityCode": 339,
+                    "totalPrices": null
+                },
+                {
+                    "city": "甘孜",
+                    "cityCode": 328,
+                    "totalPrices": null
+                },
+                {
+                    "city": "泸州",
+                    "cityCode": 342,
+                    "totalPrices": null
+                },
+                {
+                    "city": "阿坝",
+                    "cityCode": 324,
+                    "totalPrices": null
+                },
+                {
+                    "city": "遂宁",
+                    "cityCode": 337,
+                    "totalPrices": null
+                },
+                {
+                    "city": "广元",
+                    "cityCode": 330,
+                    "totalPrices": null
+                },
+                {
+                    "city": "德阳",
+                    "cityCode": 327,
+                    "totalPrices": null
+                },
+                {
+                    "city": "内江",
+                    "cityCode": 335,
+                    "totalPrices": null
+                },
+                {
+                    "city": "绵阳",
+                    "cityCode": 323,
+                    "totalPrices": null
+                },
+                {
+                    "city": "达州",
+                    "cityCode": 326,
+                    "totalPrices": null
+                },
+                {
+                    "city": "巴中",
+                    "cityCode": 325,
+                    "totalPrices": null
+                },
+                {
+                    "city": "雅安",
+                    "cityCode": 338,
+                    "totalPrices": null
+                },
+                {
+                    "city": "攀枝花",
+                    "cityCode": 336,
+                    "totalPrices": null
+                },
+                {
+                    "city": "资阳",
+                    "cityCode": 340,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "浙江",
+                "cityCode": 31,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "嘉兴",
+                    "cityCode": 385,
+                    "totalPrices": null
+                },
+                {
+                    "city": "舟山",
+                    "cityCode": 392,
+                    "totalPrices": null
+                },
+                {
+                    "city": "台州",
+                    "cityCode": 390,
+                    "totalPrices": null
+                },
+                {
+                    "city": "湖州",
+                    "cityCode": 384,
+                    "totalPrices": null
+                },
+                {
+                    "city": "绍兴",
+                    "cityCode": 389,
+                    "totalPrices": null
+                },
+                {
+                    "city": "温州",
+                    "cityCode": 391,
+                    "totalPrices": null
+                },
+                {
+                    "city": "宁波",
+                    "cityCode": 388,
+                    "totalPrices": null
+                },
+                {
+                    "city": "金华",
+                    "cityCode": 386,
+                    "totalPrices": null
+                },
+                {
+                    "city": "衢州",
+                    "cityCode": 393,
+                    "totalPrices": null
+                },
+                {
+                    "city": "杭州",
+                    "cityCode": 383,
+                    "totalPrices": null
+                },
+                {
+                    "city": "丽水",
+                    "cityCode": 387,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "重庆",
+                "cityCode": 32,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "重庆",
+                    "cityCode": 394,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "湖北",
+                "cityCode": 13,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "仙桃",
+                    "cityCode": 181,
+                    "totalPrices": null
+                },
+                {
+                    "city": "咸宁",
+                    "cityCode": 192,
+                    "totalPrices": null
+                },
+                {
+                    "city": "十堰",
+                    "cityCode": 189,
+                    "totalPrices": null
+                },
+                {
+                    "city": "荆州",
+                    "cityCode": 186,
+                    "totalPrices": null
+                },
+                {
+                    "city": "神农架林区",
+                    "cityCode": 188,
+                    "totalPrices": null
+                },
+                {
+                    "city": "孝感",
+                    "cityCode": 194,
+                    "totalPrices": null
+                },
+                {
+                    "city": "鄂州",
+                    "cityCode": 182,
+                    "totalPrices": null
+                },
+                {
+                    "city": "武汉",
+                    "cityCode": 180,
+                    "totalPrices": null
+                },
+                {
+                    "city": "潜江",
+                    "cityCode": 187,
+                    "totalPrices": null
+                },
+                {
+                    "city": "荆门",
+                    "cityCode": 185,
+                    "totalPrices": null
+                },
+                {
+                    "city": "天门",
+                    "cityCode": 191,
+                    "totalPrices": null
+                },
+                {
+                    "city": "黄冈",
+                    "cityCode": 183,
+                    "totalPrices": null
+                },
+                {
+                    "city": "襄樊",
+                    "cityCode": 193,
+                    "totalPrices": null
+                },
+                {
+                    "city": "恩施",
+                    "cityCode": 196,
+                    "totalPrices": null
+                },
+                {
+                    "city": "宜昌",
+                    "cityCode": 195,
+                    "totalPrices": null
+                },
+                {
+                    "city": "黄石",
+                    "cityCode": 184,
+                    "totalPrices": null
+                },
+                {
+                    "city": "随州",
+                    "cityCode": 190,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "湖南",
+                "cityCode": 14,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "衡阳",
+                    "cityCode": 201,
+                    "totalPrices": null
+                },
+                {
+                    "city": "株洲",
+                    "cityCode": 210,
+                    "totalPrices": null
+                },
+                {
+                    "city": "张家界",
+                    "cityCode": 198,
+                    "totalPrices": null
+                },
+                {
+                    "city": "益阳",
+                    "cityCode": 207,
+                    "totalPrices": null
+                },
+                {
+                    "city": "长沙",
+                    "cityCode": 197,
+                    "totalPrices": null
+                },
+                {
+                    "city": "湘西",
+                    "cityCode": 206,
+                    "totalPrices": null
+                },
+                {
+                    "city": "永州",
+                    "cityCode": 208,
+                    "totalPrices": null
+                },
+                {
+                    "city": "岳阳",
+                    "cityCode": 209,
+                    "totalPrices": null
+                },
+                {
+                    "city": "邵阳",
+                    "cityCode": 204,
+                    "totalPrices": null
+                },
+                {
+                    "city": "常德",
+                    "cityCode": 199,
+                    "totalPrices": null
+                },
+                {
+                    "city": "湘潭",
+                    "cityCode": 205,
+                    "totalPrices": null
+                },
+                {
+                    "city": "娄底",
+                    "cityCode": 203,
+                    "totalPrices": null
+                },
+                {
+                    "city": "郴州",
+                    "cityCode": 200,
+                    "totalPrices": null
+                },
+                {
+                    "city": "怀化",
+                    "cityCode": 202,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "江西",
+                "cityCode": 17,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "宜春",
+                    "cityCode": 242,
+                    "totalPrices": null
+                },
+                {
+                    "city": "景德镇",
+                    "cityCode": 237,
+                    "totalPrices": null
+                },
+                {
+                    "city": "萍乡",
+                    "cityCode": 239,
+                    "totalPrices": null
+                },
+                {
+                    "city": "新余",
+                    "cityCode": 241,
+                    "totalPrices": null
+                },
+                {
+                    "city": "上饶",
+                    "cityCode": 240,
+                    "totalPrices": null
+                },
+                {
+                    "city": "抚州",
+                    "cityCode": 234,
+                    "totalPrices": null
+                },
+                {
+                    "city": "赣州",
+                    "cityCode": 235,
+                    "totalPrices": null
+                },
+                {
+                    "city": "吉安",
+                    "cityCode": 236,
+                    "totalPrices": null
+                },
+                {
+                    "city": "九江",
+                    "cityCode": 238,
+                    "totalPrices": null
+                },
+                {
+                    "city": "鹰潭",
+                    "cityCode": 243,
+                    "totalPrices": null
+                },
+                {
+                    "city": "南昌",
+                    "cityCode": 233,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "云南",
+                "cityCode": 30,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "怒江",
+                    "cityCode": 368,
+                    "totalPrices": null
+                },
+                {
+                    "city": "昭通",
+                    "cityCode": 382,
+                    "totalPrices": null
+                },
+                {
+                    "city": "昆明",
+                    "cityCode": 367,
+                    "totalPrices": null
+                },
+                {
+                    "city": "文山",
+                    "cityCode": 379,
+                    "totalPrices": null
+                },
+                {
+                    "city": "楚雄",
+                    "cityCode": 372,
+                    "totalPrices": null
+                },
+                {
+                    "city": "曲靖",
+                    "cityCode": 378,
+                    "totalPrices": null
+                },
+                {
+                    "city": "丽江",
+                    "cityCode": 370,
+                    "totalPrices": null
+                },
+                {
+                    "city": "迪庆",
+                    "cityCode": 375,
+                    "totalPrices": null
+                },
+                {
+                    "city": "普洱",
+                    "cityCode": 369,
+                    "totalPrices": null
+                },
+                {
+                    "city": "玉溪",
+                    "cityCode": 381,
+                    "totalPrices": null
+                },
+                {
+                    "city": "西双版纳",
+                    "cityCode": 380,
+                    "totalPrices": null
+                },
+                {
+                    "city": "德宏",
+                    "cityCode": 374,
+                    "totalPrices": null
+                },
+                {
+                    "city": "大理",
+                    "cityCode": 373,
+                    "totalPrices": null
+                },
+                {
+                    "city": "临沧",
+                    "cityCode": 377,
+                    "totalPrices": null
+                },
+                {
+                    "city": "保山",
+                    "cityCode": 371,
+                    "totalPrices": null
+                },
+                {
+                    "city": "红河",
+                    "cityCode": 376,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "内蒙古",
+                "cityCode": 19,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "通辽",
+                    "cityCode": 265,
+                    "totalPrices": null
+                },
+                {
+                    "city": "呼和浩特",
+                    "cityCode": 258,
+                    "totalPrices": null
+                },
+                {
+                    "city": "巴彦淖尔盟",
+                    "cityCode": 260,
+                    "totalPrices": null
+                },
+                {
+                    "city": "乌海",
+                    "cityCode": 266,
+                    "totalPrices": null
+                },
+                {
+                    "city": "呼伦贝尔",
+                    "cityCode": 264,
+                    "totalPrices": null
+                },
+                {
+                    "city": "锡林郭勒盟",
+                    "cityCode": 268,
+                    "totalPrices": null
+                },
+                {
+                    "city": "包头",
+                    "cityCode": 261,
+                    "totalPrices": null
+                },
+                {
+                    "city": "兴安盟",
+                    "cityCode": 269,
+                    "totalPrices": null
+                },
+                {
+                    "city": "鄂尔多斯",
+                    "cityCode": 263,
+                    "totalPrices": null
+                },
+                {
+                    "city": "乌兰察布市",
+                    "cityCode": 267,
+                    "totalPrices": null
+                },
+                {
+                    "city": "阿拉善盟",
+                    "cityCode": 259,
+                    "totalPrices": null
+                },
+                {
+                    "city": "赤峰",
+                    "cityCode": 262,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "辽宁",
+                "cityCode": 18,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "盘锦",
+                    "cityCode": 255,
+                    "totalPrices": null
+                },
+                {
+                    "city": "葫芦岛",
+                    "cityCode": 252,
+                    "totalPrices": null
+                },
+                {
+                    "city": "沈阳",
+                    "cityCode": 244,
+                    "totalPrices": null
+                },
+                {
+                    "city": "阜新",
+                    "cityCode": 251,
+                    "totalPrices": null
+                },
+                {
+                    "city": "辽阳",
+                    "cityCode": 254,
+                    "totalPrices": null
+                },
+                {
+                    "city": "丹东",
+                    "cityCode": 249,
+                    "totalPrices": null
+                },
+                {
+                    "city": "锦州",
+                    "cityCode": 253,
+                    "totalPrices": null
+                },
+                {
+                    "city": "抚顺",
+                    "cityCode": 250,
+                    "totalPrices": null
+                },
+                {
+                    "city": "营口",
+                    "cityCode": 257,
+                    "totalPrices": null
+                },
+                {
+                    "city": "本溪",
+                    "cityCode": 247,
+                    "totalPrices": null
+                },
+                {
+                    "city": "鞍山",
+                    "cityCode": 246,
+                    "totalPrices": null
+                },
+                {
+                    "city": "朝阳",
+                    "cityCode": 248,
+                    "totalPrices": null
+                },
+                {
+                    "city": "大连",
+                    "cityCode": 245,
+                    "totalPrices": null
+                },
+                {
+                    "city": "铁岭",
+                    "cityCode": 256,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "青海",
+                "cityCode": 21,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "黄南",
+                    "cityCode": 281,
+                    "totalPrices": null
+                },
+                {
+                    "city": "西宁",
+                    "cityCode": 275,
+                    "totalPrices": null
+                },
+                {
+                    "city": "果洛",
+                    "cityCode": 276,
+                    "totalPrices": null
+                },
+                {
+                    "city": "海西",
+                    "cityCode": 280,
+                    "totalPrices": null
+                },
+                {
+                    "city": "玉树",
+                    "cityCode": 282,
+                    "totalPrices": null
+                },
+                {
+                    "city": "海东",
+                    "cityCode": 278,
+                    "totalPrices": null
+                },
+                {
+                    "city": "海北",
+                    "cityCode": 277,
+                    "totalPrices": null
+                },
+                {
+                    "city": "海南",
+                    "cityCode": 279,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "天津",
+                "cityCode": 27,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "天津",
+                    "cityCode": 343,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "陕西",
+                "cityCode": 24,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "咸阳",
+                    "cityCode": 318,
+                    "totalPrices": null
+                },
+                {
+                    "city": "铜川",
+                    "cityCode": 316,
+                    "totalPrices": null
+                },
+                {
+                    "city": "安康",
+                    "cityCode": 312,
+                    "totalPrices": null
+                },
+                {
+                    "city": "渭南",
+                    "cityCode": 317,
+                    "totalPrices": null
+                },
+                {
+                    "city": "延安",
+                    "cityCode": 319,
+                    "totalPrices": null
+                },
+                {
+                    "city": "汉中",
+                    "cityCode": 314,
+                    "totalPrices": null
+                },
+                {
+                    "city": "西安",
+                    "cityCode": 311,
+                    "totalPrices": null
+                },
+                {
+                    "city": "榆林",
+                    "cityCode": 320,
+                    "totalPrices": null
+                },
+                {
+                    "city": "宝鸡",
+                    "cityCode": 313,
+                    "totalPrices": null
+                },
+                {
+                    "city": "商洛",
+                    "cityCode": 315,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "新疆",
+                "cityCode": 29,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "博尔塔拉",
+                    "cityCode": 355,
+                    "totalPrices": null
+                },
+                {
+                    "city": "阿拉尔",
+                    "cityCode": 353,
+                    "totalPrices": null
+                },
+                {
+                    "city": "喀什",
+                    "cityCode": 359,
+                    "totalPrices": null
+                },
+                {
+                    "city": "五家渠",
+                    "cityCode": 365,
+                    "totalPrices": null
+                },
+                {
+                    "city": "乌鲁木齐",
+                    "cityCode": 351,
+                    "totalPrices": null
+                },
+                {
+                    "city": "和田",
+                    "cityCode": 358,
+                    "totalPrices": null
+                },
+                {
+                    "city": "巴音郭楞",
+                    "cityCode": 354,
+                    "totalPrices": null
+                },
+                {
+                    "city": "昌吉",
+                    "cityCode": 356,
+                    "totalPrices": null
+                },
+                {
+                    "city": "哈密",
+                    "cityCode": 357,
+                    "totalPrices": null
+                },
+                {
+                    "city": "克拉玛依",
+                    "cityCode": 360,
+                    "totalPrices": null
+                },
+                {
+                    "city": "吐鲁番",
+                    "cityCode": 364,
+                    "totalPrices": null
+                },
+                {
+                    "city": "克孜勒苏",
+                    "cityCode": 361,
+                    "totalPrices": null
+                },
+                {
+                    "city": "阿克苏",
+                    "cityCode": 352,
+                    "totalPrices": null
+                },
+                {
+                    "city": "图木舒克",
+                    "cityCode": 363,
+                    "totalPrices": null
+                },
+                {
+                    "city": "伊犁",
+                    "cityCode": 366,
+                    "totalPrices": null
+                },
+                {
+                    "city": "石河子",
+                    "cityCode": 362,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "澳门",
+                "cityCode": 34,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "澳门",
+                    "cityCode": 396,
+                    "totalPrices": null
+                }
+            ]
+        },
+        {
+            "localAndPriceDto": {
+                "city": "江苏",
+                "cityCode": 16,
+                "totalPrices": null
+            },
+            "localAndPriceDtoList": [
+                {
+                    "city": "泰州",
+                    "cityCode": 228,
+                    "totalPrices": null
+                },
+                {
+                    "city": "徐州",
+                    "cityCode": 229,
+                    "totalPrices": null
+                },
+                {
+                    "city": "南通",
+                    "cityCode": 226,
+                    "totalPrices": null
+                },
+                {
+                    "city": "宿迁",
+                    "cityCode": 227,
+                    "totalPrices": null
+                },
+                {
+                    "city": "镇江",
+                    "cityCode": 232,
+                    "totalPrices": null
+                },
+                {
+                    "city": "无锡",
+                    "cityCode": 222,
+                    "totalPrices": null
+                },
+                {
+                    "city": "常州",
+                    "cityCode": 223,
+                    "totalPrices": null
+                },
+                {
+                    "city": "盐城",
+                    "cityCode": 230,
+                    "totalPrices": null
+                },
+                {
+                    "city": "淮安",
+                    "cityCode": 224,
+                    "totalPrices": null
+                },
+                {
+                    "city": "连云港",
+                    "cityCode": 225,
+                    "totalPrices": null
+                },
+                {
+                    "city": "扬州",
+                    "cityCode": 231,
+                    "totalPrices": null
+                },
+                {
+                    "city": "南京",
+                    "cityCode": 220,
+                    "totalPrices": null
+                },
+                {
+                    "city": "苏州",
+                    "cityCode": 221,
+                    "totalPrices": null
+                }
+            ]
+        }
+    ]
+}
