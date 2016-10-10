@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title>Credit Score Dashboard</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    canvas {
+      border: 1px solid #eee;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+  <body>
+    <canvas id="canvas" width="400" height="400" data-score="650"></canvas>
+  </body>
+  <script>
+    function draw() {
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d'),
+          score = canvas.getAttribute('data-score'), //取得分数
+          total = 1000, //分数段 0~1000
+          deg = Math.PI;
+      //显示分数
+      ctx.translate(200, 200);
+      ctx.font = '16px serif';
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#0ecea2';
+      ctx.fillText(score, 0, 35);
+      //绘制灰底
+      ctx.strokeStyle = '#ddd';
+      ctx.lineWidth = 8;
+      ctx.beginPath();
+      ctx.arc(0, 0, 50, deg*2/9, deg*7/9, true);
+      ctx.stroke();
+
+      function paint() {
+        //绘制环形分数条
+        ctx.strokeStyle = '#00b89c';
+        ctx.lineWidth = 8;
+        ctx.beginPath();
+        ctx.arc(0, 0, 50, deg*7/9, deg*7/9+deg*score*13/total/9,  false);
+        ctx.stroke();
+        //绘制指向箭头
+        ctx.rotate(Math.PI*5/18+deg*score*13/total/9);
+        ctx.fillStyle = '#0ecea2';
+        ctx.beginPath();
+        ctx.arc(0, 0, 8, 0, Math.PI*2, true);
+        ctx.fill();
+        ctx.fillStyle = '#0ecea2';
+        ctx.beginPath();
+        ctx.moveTo(0, 25);
+        ctx.lineTo(8, 0);
+        ctx.lineTo(-8, 0);
+        ctx.closePath();
+        ctx.fill();
+      }
+
+      paint();
+    }
+
+    draw();
+  </script>
+</html>
