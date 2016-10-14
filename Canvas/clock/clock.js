@@ -4,7 +4,7 @@
  * github: https://github.com/lifeng1893
  * email: lifeng.isme@foxmail.com
  */
-function clock() {
+(function clock() {
   var ctx = document.getElementById('canvas').getContext('2d');
   var now = new Date(),
       sec = now.getSeconds(),
@@ -141,6 +141,4 @@ function clock() {
   ctx.restore();
 
   window.requestAnimationFrame(clock);
-}
-
-clock();
+})();
