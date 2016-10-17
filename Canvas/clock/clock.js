@@ -68,7 +68,7 @@
   ctx.fillText('12', 0, -100);
   ctx.restore();
 
-  //小时指针
+  //时针
   ctx.save();
   ctx.rotate(hr * (Math.PI / 6) + min * (Math.PI / 360) + sec * (Math.PI / 21600));
   ctx.lineWidth = 10;
@@ -82,7 +82,7 @@
   ctx.fill();
   ctx.restore();
 
-  //分钟指针
+  //分针
   ctx.save();
   ctx.rotate(min * (Math.PI / 30) + sec * (Math.PI/1800));
   ctx.lineWidth = 6;
@@ -100,7 +100,7 @@
   ctx.stroke();
   ctx.restore();
 
-  //秒指针
+  //秒针
   ctx.save();
   ctx.rotate(sec * (Math.PI /30));
   ctx.beginPath();
