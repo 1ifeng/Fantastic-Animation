@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TOP250</title>
+  <link rel="stylesheet" href="css/movies.css">
+  <script src="jquery-1.10.2.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content clearfix">
+      <div class="top"></div>
+      <ul class="clearfix">
+      </ul>
+    </div>
+  </div>
+  <script>
+    $(function() {
+      $.ajax({
+        type: 'get',
+        url: '../node/temp.json',
+        dataType: 'json',
+        success: function(data) {
+          var prevUrl = 'https://img1.doubanio.com/view/photo/photo/public';
+          var coverImgUrl = [];
+          var genre = [];
+          for(var i = 0; i < data.length; i++) {
+            coverImgUrl.push(prevUrl + data[i].imgUrl.substring(data[i].imgUrl.lastIndexOf('/'), data[i].imgUrl.length));
+            genre.push(data[i].type.substring(data[i].type.lastIndexOf('/'), data[i].type.lastIndexOf('\n')).substring(2));
+          }
+          // console.log(coverImgUrl[0]);
+          // console.log(genre);
+          for(i = 0; i < data.length; i++) {
+            var box = "<li class='m-box'>" +
+                        "<a class='cover' href='" + data[i].url + "' target='_blank'>" +
+                          "<img src='" + coverImgUrl[i] + "' alt=''>" +
+                        "</a>" +
+                        "<span class='rate'>" + data[i].star + "</span>" +
+                        "<a class='title' href='" + data[i].url + "' target='_balnk'>" + data[i].title + "</a>" +
+                        "<p class='genre'>" + genre[i] + "</p>" +
+                      "</li>";
+
+            $('.content ul').append(box);
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
