@@ -1,0 +1,15 @@
+{
+  "name": "movieCrawler",
+  "version": "1.0.0",
+  "description": "crawling Douban top250 movies using superagent and cheerio.",
+  "main": "movieCrawler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lifeng1893",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "superagent": "^2.3.0"
+  }
+}
