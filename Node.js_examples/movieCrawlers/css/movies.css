@@ -118,3 +118,67 @@ li {
   cursor: default;
   /*box-shadow: 0 2px 10px #000;*/
 }
+
+.row {
+  position: relative;
+  width: 1000px;
+  border-bottom: 1px dashed #999;
+  padding-top: 15px;
+}
+
+.row h4 {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: #ddd;
+}
+
+.choice {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.choice:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.choice a {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  color: #ddd;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.more {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.cur {
+  background: #f68d01;
+  color: #fff !important;
+}
+
+.backtotop {
+  display: none;
+  position: fixed;
+  right: 50%;
+  margin-right: -600px;
+  bottom: 10%;
+  width: 52px;
+  height: 72px;
+  background: url(../images/back_to_top.png) center no-repeat;
+  cursor: pointer;:
+}
+
+.backtotop:hover {
+  background: url(../images/back_to_top_hover.png) center no-repeat;
+}
+
