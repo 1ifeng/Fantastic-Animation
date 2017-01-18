@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>
-    <%= title %> - Blog</title>
+  <title>-------- Blog</title>
   <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
+
 <body>
   <div class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -17,7 +18,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand href="/">Brand</a>
+        <a class="navbar-brand href=" /">Brand</a>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
@@ -29,6 +30,19 @@
     </div>
   </div>
   <div class="container">
+    <% if (success)  { %>
+      <div class="alert alert-success" role="alert">
+        <%= success %>
+      </div>
+    <% } else if (error) { %>
+      <div class="alert alert-danger" role="alert">
+        <%= error %>
+      </div>
+    <% } else {%>
+      <div class="alert alert-info" role="alert">
+        请填写信息
+      </div>
+    <% } %>
     <form class="form-horizontal" method="POST" role="form">
       <legend>用户注册</legend>
       <div class="form-group">
@@ -47,7 +61,7 @@
       <div class="form-group">
         <label for="password-repeat" class="col-sm-2 control-label">密码</label>
         <div class="col-sm-4">
-          <input type="password" id="password" class="form-control" name="password-repeat">
+          <input type="password" id="repassword" class="form-control" name="repassword">
         </div>
       </div>
       <div class="form-group">
