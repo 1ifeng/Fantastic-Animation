@@ -37,7 +37,7 @@ router.post('/', checkNotLogin, function(req, res, next) {
     delete user.password;
     req.session.user = user;
     req.flash('success', '注册成功');
-    console.log('============n OK!');
+    console.log('============\n Signup OK!  \n ============');
     res.redirect('/posts');
   }).catch(function(e) {
     if (e.message.match('E11000 duplicate key')) {
