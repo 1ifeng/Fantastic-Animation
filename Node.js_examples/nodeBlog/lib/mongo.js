@@ -7,7 +7,7 @@ mongolass.connect(config.mongodb);
 
 mongolass.plugin('addCreateAt',{
   afterFind: function(results) {
-    result.forEach(function(item) {
+    results.forEach(function(item) {
       item.created_at = moment(objectIdToTimestamp(item._id)).format('YYYY-MM-DD HH:mm');
     });
     return results;

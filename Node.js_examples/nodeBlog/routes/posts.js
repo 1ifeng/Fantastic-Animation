@@ -4,20 +4,28 @@ var router = express.Router();
 var PostModel = require('../models/posts.js');
 var checkLogin = require('../middlewares/check.js').checkLogin;
 
+// GET /posts
 router.get('/', function(req, res, next) {
-  res.render('posts');
+  console.log('++++++++++++++++++++++++++++++');
+  var author = req.query.author;
+  console.log(author);
+
+  PostModel.getPosts(author)
+    .then(function(posts) {
+      res.render('posts', {posts: posts});
+    }).catch(next);
 });
 
+// GET /create
 router.get('/create', checkLogin, function(req, res, next) {
   res.render('create');
 });
 
+// POST /posts
 router.post('/', checkLogin, function(req, res, next) {
-  // res.render('posts');
   var author = req.session.user._id;
   var title = req.body.title;
   var content = req.body.content;
-  console.log('===============\n' +　author);
 
   try {
     if (!title.length) {
@@ -40,15 +48,25 @@ router.post('/', checkLogin, function(req, res, next) {
   PostModel.create(post)
     .then(function(result) {
       post = result.ops[0];
-      console.log('post OK!!!!!!!!!!!!!!!!!!!!!!');
       req.flash('success', '发表成功');
-      res.redirect('/posts/${posts._id}');
+      res.redirect(`/posts/${post._id}`);
     }).catch(next);
 });
 
-
+// GET /posts/:postId
 router.get('/:postId', function(req, res, next) {
-  res.send(req.flash());
+  var postId = req.params.postId;
+
+  Promise.all([
+    PostModel.getPostById(postId),
+    PostModel.incPv(postId)
+  ]).then(function(result) {
+    var post = result[0];
+    if (! post) {
+      throw new Error('文章不存在');
+    }
+    res.render('post', {post: post});
+  }).catch(next);
 });
 
 router.get('/:postId/edit', checkLogin, function(req, res, next) {
@@ -72,6 +90,3 @@ router.get('/:postId/comment/:commentId/remove', checkLogin, function(req, res, 
 });
 
 module.exports = router;
-
-
-
