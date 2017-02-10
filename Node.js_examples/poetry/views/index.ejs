@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="top-container">
+        <div class="site-logo">
+          <a href="/"><img src="/images/site_logo.png" alt=""></a>
+        </div>
+        <div class="user-block">
+          <div class="avatar">
+            <img src="/images/thumbnail02.png" alt="">
+            <ul class="dropdown-list ">
+              <li><a href="javascript:">我的主页</a></li>
+              <li><a href="javascript:">登出</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-panel">
+      <div class="showcase"></div>
+      <div class="site-content">
+        <div class="sorts-container">
+          <a href="/release">发布</a>
+          <a href="/signup">注册</a>
+        </div>
+        <div class="content-wrapper">
+          <div class="contents">
+            <div class="poetry-item">
+              <div class="thumbnail">
+                <img src='/images/thumbnail.png' alt="">
+              </div>
+              <div class="poetry-content">
+                <p>诗万首</p>
+                <p>酒千觞</p>
+                <p>几曾着眼看侯王。</p>
+              </div>
+              <div class="info-row">
+                <div class="user-avatar-small" style="background-image: url('/images/thumbnail02.png');"></div>
+                <p class="create-time">2017-02-08</p>
+                <div class="cover-stat">
+                  <span class="stat-messages">7</span>
+                  <span class="stat-appreciations likes">96</span>
+                </div>
+              </div>
+            </div>
+            <div class="poetry-item">
+              <div class="thumbnail">
+                <img src='/images/thumbnail02.png' alt="">
+              </div>
+              <div class="poetry-content">
+                <p>大江东去</p>
+                <p>浪淘尽</p>
+                <p>千古风流人物</p>
+              </div>
+              <div class="info-row">
+                <div class="user-avatar-small" style="background-image: url('/images/thumbnail.png');"></div>
+                <p class="create-time">2017-02-08</p>
+                <div class="cover-stat">
+                  <span class="stat-messages">72</span>
+                  <span class="stat-appreciations likes">271</span>
+                </div>
+              </div>
+            </div>
+            <div class="poetry-item">
+              <div class="thumbnail">
+                <img src='/images/thumbnail03.png' alt="">
+              </div>
+              <div class="poetry-content">
+                <p>银碗盛雪</p>
+                <p>明月藏鹭</p>
+                <p>白马入芦花</p>
+              </div>
+              <div class="info-row">
+                <div class="user-avatar-small" style="background-image: url('/images/thumbnail04.png');"></div>
+                <p class="create-time">2017-02-08</p>
+                <div class="cover-stat">
+                  <span class="stat-messages">238</span>
+                  <span class="stat-appreciations likes">1429</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filters"></div>
+        </div>
+      </div>
+    </div>
+    <script src="/javascripts/jquery-1.10.2.min.js"></script>
+    <script>
+      $(function() {
+        $('.avatar').click(function() {
+          $(this).toggleClass('dropdown');
+        });
+      });
+    </script>
+  </body>
+</html>

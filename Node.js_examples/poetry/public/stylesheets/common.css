@@ -1,0 +1,85 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 Microsoft Yahei, 微软雅黑;
+  color: #333
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%
+}
+
+em {
+  font-style: normal
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+a {
+  text-decoration: none
+}
+
+img {
+  border: 0
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+@font-face {
+  font-family: 'FangSongBen';
+  src: url(../fonts/fangzheng.TTF);
+}
