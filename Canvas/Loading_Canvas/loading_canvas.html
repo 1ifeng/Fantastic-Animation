@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOADING</title>
+  <style>
+  html,
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #1a334d;
+  }
+
+  #loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    filter: blur(1px);
+  }
+  </style>
+</head>
+<body>
+  <canvas id="loading" width="400px" height="400px"></canvas>
+  <script>
+    var canvas = document.getElementById('loading');
+    var ctx = canvas.getContext('2d');
+    var cWidth = canvas.width;
+    var cHeight = canvas.height;
+
+    var loading = new Load(100);
+    var angle = 0;
+    var v = 0.1;
+
+    (function drawFrame() {
+      ctx.save();
+      ctx.clearRect(0, 0, cWidth, cHeight);
+      ctx.translate(cWidth / 2, cHeight / 2);
+      angle += v;
+      ctx.rotate(angle);
+      loading.draw(ctx);
+      ctx.restore();
+      window.requestAnimationFrame(drawFrame);
+    })();
+
+    function Load(r) {
+      this.r1 = r;
+      this.r2 = r * 17 / 20;
+      this.r3 = r * 3 / 20;
+      this.draw = function(ctx) {
+        ctx.save();
+        ctx.beginPath();
+        var lingrad_one = ctx.createLinearGradient(-this.r1, 0, this.r1, 0);
+        lingrad_one.addColorStop(0, '#00ccff');
+        lingrad_one.addColorStop(0.5, '#ffde00');
+        lingrad_one.addColorStop(1, '#fff');
+        ctx.fillStyle = lingrad_one;
+        ctx.arc(0, 0, this.r1, 0, Math.PI, true);
+        ctx.fill();
+        ctx.restore();
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.fillStyle = '#1a334d';
+        ctx.arc(-this.r3, 0, this.r2, 0, Math.PI * 2, true);
+        ctx.fill();
+        ctx.restore();
+
+        ctx.save();
+        ctx.beginPath();
+        var lingrad_two = ctx.createLinearGradient(this.r2, 0, this.r2 * 1.1, 0);
+        lingrad_two.addColorStop(0, '#fff5b6');
+        lingrad_two.addColorStop(1, '#fff');
+        ctx.fillStyle = lingrad_two;
+        ctx.arc(this.r2, 0, this.r3, 0, Math.PI * 2, false);
+        ctx.fill();
+        ctx.restore();
+
+        var endArray = [
+          [-65, -57, 5],
+          [-92, -57, 4],
+          [-80, -47, 3],
+          [-91, -30, 2.5],
+          [-104, -24, 2.5],
+          [-107, -2, 2],
+          [-98, 9, 1.5],
+          [-93, -11, 1.5],
+          [-110, -55, 1.5],
+          [-101, -34, 1.5],
+          [-101, 20, 1.5],
+          [-81, -77, 1.5],
+          [-80, 30, 1.5],
+          [-85, 0, 1.5],
+          [-82, -42, 1.5],
+          [-77, 46, 0.5],
+          [-92, 23, 0.5]
+        ];
+        for (var i = 0; i < endArray.length; i++) {
+          ctx.save();
+          ctx.beginPath();
+          ctx.fillStyle = '#00ccff';
+          ctx.arc(endArray[i][0], endArray[i][1], endArray[i][2], 0, Math.PI * 2, false);
+          ctx.fill();
+          ctx.restore();
+        }
+      };
+    }
+  </script>
+</body>
+</html>

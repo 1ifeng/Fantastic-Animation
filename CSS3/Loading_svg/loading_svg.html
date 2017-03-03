@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <style>
+      body {
+        background: #1a334d;
+      }
+      .app {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+      }
+      .app svg {
+        width: 400px;
+        height: 400px;
+        -webkit-animation: load .8s infinite linear;
+        -webkit-filter: blur(1px);
+        filter: blur(1px)
+      }
+      @-webkit-keyframes load {
+        0%{
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="app">
+    <svg xmlns="http://www.w3.org/200/svg">
+      <defs>
+        <linearGradient id="linear_one" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#00ccff" />
+          <stop offset="50%" stop-color="#ffde00" />
+          <stop offset="100%" stop-color="#fff" />
+        </linearGradient>
+        <linearGradient id="linear_two" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#fff5b6" />
+          <stop offset="100%" stop-color="#fff" />
+        </linearGradient>
+        <filter id="Gaussian_Blur">
+          <feGaussianBlur in="sourceGraphic" stdDeviation="3" />
+        </filter>
+      </defs>
+      <path d="M 100 200 A 100 100 0 0 1 300 200" fill="url(#linear_one)" />
+      <path d="M 100 200 A 85 85 0 0 1 270 200" fill="#1a334d" />
+      <path d="M 270 200 A 15 15 0 0 0 300 200" fill="url(#linear_two)" />
+      <circle cx="285" cy="200" r="15" fill="#fff" filter="url(#Gaussian_Blur)" />
+      <circle cx="135" cy="143" r="5" fill="#00ccff" />
+      <circle cx="108" cy="143" r="4" fill="#00ccff" />
+      <circle cx="120" cy="153" r="3" fill="#00ccff" />
+      <circle cx="109" cy="170" r="2.5" fill="#00ccff" />
+      <circle cx="96" cy="176" r="2.5" fill="#00ccff" />
+      <circle cx="93" cy="198" r="2" fill="#00ccff" />
+      <circle cx="102" cy="209" r="1.5" fill="#00ccff" />
+      <circle cx="107" cy="189" r="1.5" fill="#00ccff" />
+      <circle cx="90" cy="145" r="1" fill="#00ccff" />
+      <circle cx="99" cy="166" r="1" fill="#00ccff" />
+      <circle cx="99" cy="220" r="1" fill="#00ccff" />
+      <circle cx="119" cy="123" r="1" fill="#00ccff" />
+      <circle cx="120" cy="230" r="1" fill="#00ccff" />
+      <circle cx="115" cy="200" r="1" fill="#00ccff" />
+      <circle cx="118" cy="158" r="1" fill="#00ccff" />
+      <circle cx="123" cy="246" r="0.5" fill="#00ccff" />
+      <circle cx="108" cy="223" r="0.5" fill="#00ccff" />
+    </svg>
+  </div>
+</body>
+</html>
