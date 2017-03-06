@@ -1,0 +1,51 @@
+$bg_color: #1a334d;
+@mixin same_width($width: 400px) {
+  width: $width;
+  height: $width;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background: $bg_color;
+}
+
+.case {
+  float: left;
+  @include same_width;
+}
+
+#example_01 {
+  svg {
+    @include same_width;
+    -webkit-animation: example_01 .8s infinite linear;
+    filter: blur(1px);
+  }
+  @-webkit-keyframes example_01 {
+    0%{
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+#example_02 {
+  .circle {
+    @include same_width(200px);
+    -webkit-animation: example_02 1s infinite linear;
+    span {
+      display: inline-block;
+      @include same_width(20px)
+
+    }
+  }
+  @-webkit-keyframes example_02 {
+
+  }
+}
