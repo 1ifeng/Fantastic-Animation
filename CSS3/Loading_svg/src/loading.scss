@@ -1,23 +1,40 @@
+@charset "UTF-8";
+
+@import 'compass/reset';
+@import 'compass/css3';
+
 $bg_color: #1a334d;
+$ball_width: 20px;
+
 @mixin same_width($width: 400px) {
   width: $width;
   height: $width;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+@mixin center {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  margin: auto;
+}
+
+@mixin BallPosition($radius, $deg) {
+  left: 100px + $radius * cos($deg);
+  top: 100 - $radius * sin($deg);
+  margin-top: -$ball_width/2;
+  margin-left: -$ball_width/2;
 }
 
 body {
-  position: relative;
   background: $bg_color;
 }
 
 .case {
+  position: relative;
   float: left;
   @include same_width;
 }
+
+/* example01 */
 
 #example_01 {
   svg {
@@ -35,17 +52,33 @@ body {
   }
 }
 
+/* example02 */
+
 #example_02 {
   .circle {
+    @include center;
     @include same_width(200px);
-    -webkit-animation: example_02 1s infinite linear;
     span {
+      position: absolute;
       display: inline-block;
-      @include same_width(20px)
-
+      @include same_width($ball_width);
+      background: #fff;
+      @include border-radius($ball_width/2);
+      -webkit-animation: example_02 1.2s infinite ease;
+      @for $n from 1 through 12 {
+        &:nth-child(#{$n}) {
+          @include BallPosition(60px, $n * 30deg);
+          -webkit-animation-delay: 0.1s * $n;
+        }
+      }
     }
   }
   @-webkit-keyframes example_02 {
-
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
   }
 }

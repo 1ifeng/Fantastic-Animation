@@ -1,19 +1,71 @@
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
 }
 
 body {
-  position: relative;
   background: #1a334d;
 }
 
 .case {
+  position: relative;
   float: left;
   width: 400px;
   height: 400px;
 }
 
+/* example01 */
 #example_01 svg {
   width: 400px;
   height: 400px;
@@ -21,7 +73,6 @@ body {
   -webkit-filter: blur(1px);
           filter: blur(1px);
 }
-
 @-webkit-keyframes example_01 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -32,17 +83,115 @@ body {
             transform: rotate(360deg);
   }
 }
-
+/* example02 */
 #example_02 .circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   width: 200px;
   height: 200px;
-  -webkit-animation: example_02 1s infinite linear;
 }
-
 #example_02 .circle span {
+  position: absolute;
   display: inline-block;
   width: 20px;
   height: 20px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-animation: example_02 1.2s infinite ease;
 }
-
-@-webkit-keyframes example_02 {}
+#example_02 .circle span:nth-child(1) {
+  left: 151.96152px;
+  top: 70px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.1s;
+}
+#example_02 .circle span:nth-child(2) {
+  left: 130px;
+  top: 48.03848px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.2s;
+}
+#example_02 .circle span:nth-child(3) {
+  left: 100px;
+  top: 40px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.3s;
+}
+#example_02 .circle span:nth-child(4) {
+  left: 70px;
+  top: 48.03848px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.4s;
+}
+#example_02 .circle span:nth-child(5) {
+  left: 48.03848px;
+  top: 70px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.5s;
+}
+#example_02 .circle span:nth-child(6) {
+  left: 40px;
+  top: 100px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.6s;
+}
+#example_02 .circle span:nth-child(7) {
+  left: 48.03848px;
+  top: 130px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.7s;
+}
+#example_02 .circle span:nth-child(8) {
+  left: 70px;
+  top: 151.96152px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.8s;
+}
+#example_02 .circle span:nth-child(9) {
+  left: 100px;
+  top: 160px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 0.9s;
+}
+#example_02 .circle span:nth-child(10) {
+  left: 130px;
+  top: 151.96152px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 1s;
+}
+#example_02 .circle span:nth-child(11) {
+  left: 151.96152px;
+  top: 130px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 1.1s;
+}
+#example_02 .circle span:nth-child(12) {
+  left: 160px;
+  top: 100px;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation-delay: 1.2s;
+}
+@-webkit-keyframes example_02 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
